@@ -1,0 +1,31 @@
+{
+  "title": "Localizzazione in Angular",
+  "subtitle": "Il mondo è piccolo",
+  "changeCountry": "Cambia Paese",
+  "greeting": "Ciao mondo!",
+  "change": "Cambia",
+  "Increment": "Incremento",
+  "Date": "Data",
+  "Temp_C": "Temp. (C)",
+  "Temp_F": "Temp. (F)",
+  "Summary": "Sommario",
+
+  "menu": {
+    "site_title": "Multi_lingua",
+    "home": "Casa",
+    "counter": "Contatore",
+    "fetch_data": "Recupera dati",
+    "Lazy": "Pigro"
+  },
+
+  "counter": {
+    "subtitle": "Questo è un semplice esempio di componente angolare.",
+    "current_count_title": "Conteggio corrente"
+  },
+
+  "fetch_data": {
+    "title": "Previsioni del tempo",
+    "subtitle": "Questo componente dimostra il recupero dei dati dal server."
+  }
+
+}

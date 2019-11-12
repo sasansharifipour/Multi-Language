@@ -1,21 +1,25 @@
 <header>
   <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3'>
     <div class="container">
-      <a class="navbar-brand" [routerLink]='["/"]'>Multi_Language</a>
+      <a class="navbar-brand" [routerLink]='["/"]'>{{ 'menu.site_title' | translate:lang }}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation"
         [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]='{"show": isExpanded}'>
         <ul class="navbar-nav flex-grow">
+          <li>
+            <button (click)="selectLocale('en', 'US', 'USD');">United States</button>
+            <button (click)="selectLocale('it', 'IT', 'EUR');">Italia</button>
+          </li>
           <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-            <a class="nav-link text-dark" [routerLink]='["/"]'>Home</a>
+            <a class="nav-link text-dark" [routerLink]='["/"]'>{{ 'menu.home' | translate:lang }}</a>
           </li>
           <li class="nav-item" [routerLinkActive]='["link-active"]'>
-            <a class="nav-link text-dark" [routerLink]='["/counter"]'>Counter</a>
+            <a class="nav-link text-dark" [routerLink]='["/counter"]'>{{ 'menu.counter' | translate:lang }}</a>
           </li>
           <li class="nav-item" [routerLinkActive]='["link-active"]'>
-            <a class="nav-link text-dark" [routerLink]='["/fetch-data"]'>Fetch data</a>
+            <a class="nav-link text-dark" [routerLink]='["/fetch-data"]'>{{ 'menu.fetch_data' | translate:lang }}</a>
           </li>
         </ul>
       </div>

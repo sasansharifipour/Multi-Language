@@ -1,16 +1,16 @@
-<h1>Weather forecast</h1>
+<h1>{{ 'fetch_data.title' | translate:lang }}</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<p>{{ 'fetch_data.subtitle' | translate:lang }}</p>
 
 <p *ngIf="!forecasts"><em>Loading...</em></p>
 
 <table class='table table-striped' *ngIf="forecasts">
   <thead>
     <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
+      <th>{{ 'Date' | translate:lang }}</th>
+      <th>{{ 'Temp_C' | translate:lang }}</th>
+      <th>{{ 'Temp_F' | translate:lang }}</th>
+      <th>{{ 'Summary' | translate:lang }}</th>
     </tr>
   </thead>
   <tbody>

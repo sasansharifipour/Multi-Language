@@ -1,0 +1,28 @@
+{
+  "title": "Angular localization",
+  "greeting": "Hello World!",
+  "Increment": "Increment",
+  "Date": "Date",
+  "Temp_C": "Temp. (C)",
+  "Temp_F": "Temp. (F)",
+  "Summary": "Summary",
+
+  "menu": {
+    "site_title": "Multi_Language", 
+    "home": "Home",
+    "counter": "Counter",
+    "fetch_data": "Fetch data",
+    "Lazy": "Lazy"
+  },
+
+  "counter": {
+    "subtitle": "This is a simple example of an Angular component.",
+    "current_count_title": "Current count"
+  },
+
+  "fetch_data": {
+    "title": "Weather forecast",
+    "subtitle": "This component demonstrates fetching data from the server."
+  }
+
+}
