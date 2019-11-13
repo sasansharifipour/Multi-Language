@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { LocaleService, TranslationService, Language, DefaultLocale, Currency } from 'angular-l10n';
+import { LocaleService, Language, DefaultLocale, Currency } from 'angular-l10n';
 
 @Component({
   selector: 'app-nav-menu',
@@ -15,8 +15,7 @@ export class NavMenuComponent {
 
   isExpanded = false;
 
-  constructor(public locale: LocaleService,
-    public translation: TranslationService) { }
+  constructor(public locale: LocaleService) { }
 
   collapse() {
     this.isExpanded = false;

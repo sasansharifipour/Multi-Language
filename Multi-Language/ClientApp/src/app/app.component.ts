@@ -1,22 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-
-import { TranslationService } from 'angular-l10n';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
     
   title = 'app';
 
-  constructor(public translation: TranslationService) { }
-
-  ngOnInit(): void {
-    this.translation.translationChanged().subscribe(
-      () => { this.title = this.translation.translate('title'); }
-    );
-  }
+  constructor() { }
 
 }
